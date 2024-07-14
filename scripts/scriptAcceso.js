@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var password = document.getElementById('password').value;
 
     var users = [
-        {username: 'NoritaLopez', password: 'ramoncitomiamor'},
+        {username: 'NoritaLopez', password: 'ramonmiamor'},
         {username: 'adz', password: 'loveOrDie'}
     ];
 
