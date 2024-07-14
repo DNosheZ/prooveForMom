@@ -2,117 +2,117 @@ const Registros5N=[
     {
         servicio:"MI",
         nombre:'Medicina interna',
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CG",
         nombre:"Cirugia general",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"OTP",
         nombre:"Ortopedia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"URG",
         nombre:"Urologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"GNK",
         nombre:"Ginecologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CXP",
         nombre:"CX Plastica",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CXV",
         nombre:"CX Vascular",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"IFT",
         nombre:"Infectologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"NRG",
         nombre:"Neurocirugia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"MXF",
         nombre:"Maxilofacial",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CXT",
         nombre:"Cirugia de torax",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"OTR",
         nombre:"Otorrino",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"HMT",
         nombre:"Hematologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"PSQ",
         nombre:"Psiquiatria",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CXH",
         nombre:"CX Hepatobiliar",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"DMT",
         nombre:"Dermatologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"HPL",
         nombre:"Hepatologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"NRL",
         nombre:"Neurologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"NFL",
         nombre:"Nefrologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"MEDD",
         nombre:"MED Dolor",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"ALL",
         nombre:"Alergologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"TXL",
         nombre:"Toxicologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"P900",
         nombre:"Programa 900",
-        cantidad,
+        cantidad:0,
     },
 ];
 
@@ -120,117 +120,117 @@ const Registros6S=[
     {
         servicio:"MI",
         nombre:'Medicina interna',
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CG",
         nombre:"Cirugia general",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"OTP",
         nombre:"Ortopedia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"URG",
         nombre:"Urologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"GNK",
         nombre:"Ginecologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CXP",
         nombre:"CX Plastica",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CXV",
         nombre:"CX Vascular",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"IFT",
         nombre:"Infectologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"NRG",
         nombre:"Neurocirugia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"MXF",
         nombre:"Maxilofacial",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CXT",
         nombre:"Cirugia de torax",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"OTR",
         nombre:"Otorrino",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"HMT",
         nombre:"Hematologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"PSQ",
         nombre:"Psiquiatria",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CXH",
         nombre:"CX Hepatobiliar",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"DMT",
         nombre:"Dermatologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"HPL",
         nombre:"Hepatologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"NRL",
         nombre:"Neurologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"NFL",
         nombre:"Nefrologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"MEDD",
         nombre:"MED Dolor",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"ALL",
         nombre:"Alergologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"TXL",
         nombre:"Toxicologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"P900",
         nombre:"Programa 900",
-        cantidad,
+        cantidad:0,
     },
 ];
 
@@ -238,117 +238,117 @@ const Registros7N=[
     {
         servicio:"MI",
         nombre:'Medicina interna',
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CG",
         nombre:"Cirugia general",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"OTP",
         nombre:"Ortopedia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"URG",
         nombre:"Urologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"GNK",
         nombre:"Ginecologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CXP",
         nombre:"CX Plastica",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CXV",
         nombre:"CX Vascular",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"IFT",
         nombre:"Infectologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"NRG",
         nombre:"Neurocirugia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"MXF",
         nombre:"Maxilofacial",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CXT",
         nombre:"Cirugia de torax",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"OTR",
         nombre:"Otorrino",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"HMT",
         nombre:"Hematologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"PSQ",
         nombre:"Psiquiatria",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"CXH",
         nombre:"CX Hepatobiliar",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"DMT",
         nombre:"Dermatologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"HPL",
         nombre:"Hepatologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"NRL",
         nombre:"Neurologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"NFL",
         nombre:"Nefrologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"MEDD",
         nombre:"MED Dolor",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"ALL",
         nombre:"Alergologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"TXL",
         nombre:"Toxicologia",
-        cantidad,
+        cantidad:0,
     },
     {
         servicio:"P900",
         nombre:"Programa 900",
-        cantidad,
+        cantidad:0,
     },
 ];
 
@@ -365,10 +365,23 @@ document.getElementById('selecService').addEventListener('submit', function(even
 
     var act = event.submitter.value;
 
-    if (act === '5N' || act === '7N' || act === '6S') {
+    if (act === '5N') {
         redirectTo('selection-of-service', 'service-register');
+        document.getElementById('registro-sala-i').textContent = '5N';
         var bedsDiv = document.getElementById("beds");
-        console.log('Cambios efectuados');
+        
+        // Aquí puedes agregar campos específicos según el valor de action, si es necesario
+    }else if(act === '7N'){
+        redirectTo('selection-of-service', 'service-register');
+        document.getElementById('registro-sala-i').textContent = '7N';
+        var bedsDiv = document.getElementById("beds");
+        
+        // Aquí puedes agregar campos específicos según el valor de action, si es necesario
+    }else if(act === '6S'){
+        redirectTo('selection-of-service', 'service-register');
+        document.getElementById('registro-sala-i').textContent = '6S';
+        var bedsDiv = document.getElementById("beds");
+        
         // Aquí puedes agregar campos específicos según el valor de action, si es necesario
     }
 });
