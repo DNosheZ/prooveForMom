@@ -364,24 +364,202 @@ document.getElementById('selecService').addEventListener('submit', function(even
     event.preventDefault();
 
     var act = event.submitter.value;
-
+    var bedsDiv = document.getElementById("beds");
     if (act === '5N') {
         redirectTo('selection-of-service', 'service-register');
         document.getElementById('registro-sala-i').textContent = '5N';
-        var bedsDiv = document.getElementById("beds");
         
+        bedsDiv.innerHTML = '';
+
+        const form = document.createElement('form');
+        form.id = 'registroForm';
+
+        Registros5N.forEach((registro, index) => {
+            const formGroup = document.createElement('div');
+            formGroup.className = 'form-group';
+    
+            const label = document.createElement('label');
+            label.htmlFor = `servicio-${index}`;
+            label.textContent = registro.nombre;
+    
+            const input = document.createElement('input');
+            input.type = 'number';
+            input.id = `servicio-${index}`;
+            input.name = registro.servicio;
+            input.value = registro.cantidad;
+            input.min = 0;
+    
+            formGroup.appendChild(label);
+            formGroup.appendChild(input);
+            form.appendChild(formGroup);
+        });
+
+        const submitButton = document.createElement('button');
+        submitButton.type = 'submit';
+        submitButton.className = 'submit-btn';
+        submitButton.value='save-room';
+        submitButton.textContent = 'Guardar sala';
+
+        const submitCloseButton = document.createElement('button');
+        submitCloseButton.type = 'submit';
+        submitCloseButton.className = 'submit-btn';
+        submitCloseButton.value='save-&-close-room';
+        submitCloseButton.textContent = 'Guardar y cerrar sala';
+
+        form.appendChild(submitButton);
+        form.appendChild(submitCloseButton);
+        bedsDiv.appendChild(form);
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            var action = event.submitter.value;
+        
+            if (action === 'save-room') {
+                Registros5N.forEach((registro, index) => {
+                    const input = document.getElementById(`servicio-${index}`);
+                    registro.cantidad = parseInt(input.value, 10);
+                });
+            } else if (action === 'save-&-close-room') {
+                Registros5N.forEach((registro, index) => {
+                    const input = document.getElementById(`servicio-${index}`);
+                    registro.cantidad = parseInt(input.value, 10);
+                });
+                redirectTo('service-register','selection-of-service');
+            }
+            
+            console.log(Registros5N);
+            alert('Datos guardados exitosamente');
+        });
         // Aquí puedes agregar campos específicos según el valor de action, si es necesario
     }else if(act === '7N'){
         redirectTo('selection-of-service', 'service-register');
         document.getElementById('registro-sala-i').textContent = '7N';
-        var bedsDiv = document.getElementById("beds");
         
-        // Aquí puedes agregar campos específicos según el valor de action, si es necesario
+        bedsDiv.innerHTML = '';
+
+        const form = document.createElement('form');
+        form.id = 'registroForm';
+
+        Registros7N.forEach((registro, index) => {
+            const formGroup = document.createElement('div');
+            formGroup.className = 'form-group';
+    
+            const label = document.createElement('label');
+            label.htmlFor = `servicio-${index}`;
+            label.textContent = registro.nombre;
+    
+            const input = document.createElement('input');
+            input.type = 'number';
+            input.id = `servicio-${index}`;
+            input.name = registro.servicio;
+            input.value = registro.cantidad;
+            input.min = 0;
+    
+            formGroup.appendChild(label);
+            formGroup.appendChild(input);
+            form.appendChild(formGroup);
+        });
+
+        const submitButton = document.createElement('button');
+        submitButton.type = 'submit';
+        submitButton.className = 'submit-btn';
+        submitButton.textContent = 'Guardar sala';
+
+        const submitCloseButton = document.createElement('button');
+        submitCloseButton.type = 'submit';
+        submitCloseButton.className = 'submit-btn';
+        submitCloseButton.value='save-&-close-room';
+        submitCloseButton.textContent = 'Guardar y cerrar sala';
+
+        form.appendChild(submitButton);
+        form.appendChild(submitCloseButton);
+        bedsDiv.appendChild(form);
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            var action = event.submitter.value;
+        
+            if (action === 'save-room') {
+                Registros7N.forEach((registro, index) => {
+                    const input = document.getElementById(`servicio-${index}`);
+                    registro.cantidad = parseInt(input.value, 10);
+                });
+            } else if (action === 'save-&-close-room') {
+                Registros7N.forEach((registro, index) => {
+                    const input = document.getElementById(`servicio-${index}`);
+                    registro.cantidad = parseInt(input.value, 10);
+                });
+                redirectTo('service-register','selection-of-service');
+            }
+            
+            console.log(Registros7N);
+            alert('Datos guardados exitosamente');
+        });
+        
     }else if(act === '6S'){
         redirectTo('selection-of-service', 'service-register');
         document.getElementById('registro-sala-i').textContent = '6S';
-        var bedsDiv = document.getElementById("beds");
         
+        bedsDiv.innerHTML = '';
+
+        const form = document.createElement('form');
+        form.id = 'registroForm';
+
+        Registros6S.forEach((registro, index) => {
+            const formGroup = document.createElement('div');
+            formGroup.className = 'form-group';
+    
+            const label = document.createElement('label');
+            label.htmlFor = `servicio-${index}`;
+            label.textContent = registro.nombre;
+    
+            const input = document.createElement('input');
+            input.type = 'number';
+            input.id = `servicio-${index}`;
+            input.name = registro.servicio;
+            input.value = registro.cantidad;
+            input.min = 0;
+    
+            formGroup.appendChild(label);
+            formGroup.appendChild(input);
+            form.appendChild(formGroup);
+        });
+
+        const submitButton = document.createElement('button');
+        submitButton.type = 'submit';
+        submitButton.className = 'submit-btn';
+        submitButton.textContent = 'Guardar sala';
+
+        const submitCloseButton = document.createElement('button');
+        submitCloseButton.type = 'submit';
+        submitCloseButton.className = 'submit-btn';
+        submitCloseButton.value='save-&-close-room';
+        submitCloseButton.textContent = 'Guardar y cerrar sala';
+
+        form.appendChild(submitButton);
+        form.appendChild(submitCloseButton);
+        bedsDiv.appendChild(form);
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            var action = event.submitter.value;
+        
+            if (action === 'save-room') {
+                Registros6S.forEach((registro, index) => {
+                    const input = document.getElementById(`servicio-${index}`);
+                    registro.cantidad = parseInt(input.value, 10);
+                });
+            } else if (action === 'save-&-close-room') {
+                Registros6S.forEach((registro, index) => {
+                    const input = document.getElementById(`servicio-${index}`);
+                    registro.cantidad = parseInt(input.value, 10);
+                });
+                redirectTo('service-register','selection-of-service');
+            }
+            
+            console.log(Registros6S);
+            alert('Datos guardados exitosamente');
+       });
         // Aquí puedes agregar campos específicos según el valor de action, si es necesario
     }
 });
