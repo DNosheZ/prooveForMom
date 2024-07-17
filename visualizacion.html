@@ -20,7 +20,7 @@
         </div>
     </header>
     <main>
-        <div class="form-container">
+        <div class="form-container" id="register-option">
             <form id="menuForm">
                 <button type="submit" class="submit-btn" name="action" value="register">Registrar pacientes</button>
             </form>
@@ -31,9 +31,16 @@
                 <input type="date" id="dateInput" name="dateInput" required>
                 <button type="submit" class="submit-btn" name="action" value="Visualizate">Revisar</button>
             </form>
+            <div>
+                <form id="back-from-date-select-form">
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn" name="action" value="back">Volver</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <div id="selection-of-service" class="form-container">
-            <form id="selecService">
+            <form id="select-service-to-visualizate">
                 <h2>Por favor escoge la sala a registrar</h2>
                 <div class="form-group">
                     <button type="submit" class="submit-btn" name="action" value="5N">5N</button>
@@ -46,18 +53,21 @@
                 </div>
             </form>
             <div>
-                <form id="backForm">
+                <form id="back-from-visualization-form">
                     <div class="form-group">
-                        <button type="submit" class="submit-btn" name="action" value="back">Volver</button>
+                        <button type="submit" class="submit-btn" name="action" value="back-form-visualization">Volver</button>
                     </div>
                 </form>
             </div>
         </div>
         <div id="service-visualization" >
-            <h1>Aqui se registran las camas del servicio <span id="registro-sala-i"></span></h1>
-            <form>
-                <div id="beds">
+            <h1>Aqui se visualizan las camas del servicio <span id="visualizacion-sala-i"></span></h1>
+            <form id="back-visualization-room-to-general-form">
+                <div id="bedsVisualization">
                     <!-- Aquí se colocarán los campos a llenar -->
+                </div>
+                <div class="form-group form-container">
+                    <button type="submit" class="submit-btn" name="action" value="back-form-visualizate-room-to-service-selection">Volver</button>
                 </div>
             </form>
         </div>
