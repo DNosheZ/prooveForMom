@@ -13,6 +13,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         window.location.href = 'menu.html';
     } else if (username === users[1].username && password === users[1].password) {
         window.location.href = 'menu.html';
+        //en menu podre tener la opcion de eliminar el localStorage
     } else {
         alert('Nombre de usuario o contraseña incorrectos.');
     }

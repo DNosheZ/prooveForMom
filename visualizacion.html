@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPLR - Visualizacion de registros</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/stylesVisualizacion.css">
     <link rel="icon" href="./images/nurse-avatar.ico">
     
 </head>
@@ -24,9 +25,40 @@
                 <button type="submit" class="submit-btn" name="action" value="register">Registrar pacientes</button>
             </form>
         </div>
-        <div class="form-container">
-            <form id="visualizationForm">
+        <div id="review-date" class="form-container">
+            <form id="dateForm">
+                <h2>De que fecha quieres revisar?</h2>
+                <input type="date" id="dateInput" name="dateInput" required>
                 <button type="submit" class="submit-btn" name="action" value="Visualizate">Revisar</button>
+            </form>
+        </div>
+        <div id="selection-of-service" class="form-container">
+            <form id="selecService">
+                <h2>Por favor escoge la sala a registrar</h2>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn" name="action" value="5N">5N</button>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn" name="action" value="7N">7N</button>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn" name="action" value="6S">6S</button>
+                </div>
+            </form>
+            <div>
+                <form id="backForm">
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn" name="action" value="back">Volver</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="service-visualization" >
+            <h1>Aqui se registran las camas del servicio <span id="registro-sala-i"></span></h1>
+            <form>
+                <div id="beds">
+                    <!-- Aquí se colocarán los campos a llenar -->
+                </div>
             </form>
         </div>
     </main>
