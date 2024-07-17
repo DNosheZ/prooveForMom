@@ -563,3 +563,32 @@ document.getElementById('selecService').addEventListener('submit', function(even
         // Aquí puedes agregar campos específicos según el valor de action, si es necesario
     }
 });
+
+document.getElementById('backForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    //revisar si un JSON a cambiado
+    const now = new Date();
+
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0'); // Los meses empiezan en 0
+    const year = now.getFullYear();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+
+    const formattedDateTime = `${day}/${month}/${year}-${hours}:${minutes}`;
+    localStorage.setItem(formattedDateTime+"-registro5N",JSON.stringify(Registros5N));
+    localStorage.setItem(formattedDateTime+"-registro7N",JSON.stringify(Registros7N));
+    localStorage.setItem(formattedDateTime+"-registro6S",JSON.stringify(Registros6S));
+    Registros7N.forEach((registro) => {
+        registro.cantidad = 0;
+    });
+    Registros7N.forEach((registro) => {
+        registro.cantidad = 0;
+    });
+    Registros6S.forEach((registro) => {
+        registro.cantidad = 0;
+    });
+    if(localStorage.length!==0){
+        window.location.href = 'menu.html';
+    }
+});
