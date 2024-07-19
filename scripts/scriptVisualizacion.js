@@ -15,8 +15,9 @@ document.getElementById('dateForm').addEventListener('submit', function(event) {
         for (let i = 0; i < localStorage.length; i++) {
             const key = localStorage.key(i);
             const keyDatePart = key.split('-')[0];
-            const keyRoomPart = key.split('-')[1];
-
+            const keyHourPart = key.split('-')[1];
+            const keyRoomPart = key.split('-')[2];
+            console.log(keyHourPart);
             if (keyDatePart === formattedDate) {
                 found = true;
                 if (keyRoomPart === "registro5N") {
@@ -43,7 +44,8 @@ document.getElementById('dateForm').addEventListener('submit', function(event) {
         alert("No hay registros de alguna sala");
     }
 });
-
+//la idea es que se muestre una tabla con los registros por hora, del dia escogido
+//al escogerse una hora, se desplegara el menu para seleccionar el servicio del que se quiera revisar registro
 document.getElementById('select-service-to-visualizate').addEventListener('submit', function(event) {
     event.preventDefault();
 

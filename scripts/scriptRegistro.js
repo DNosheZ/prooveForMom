@@ -536,6 +536,7 @@ document.getElementById('selecService').addEventListener('submit', function(even
         submitCloseButton.value='save-&-close-room';
         submitCloseButton.textContent = 'Guardar y cerrar sala';
 
+        const hourInput=document.createElement('input');
         form.appendChild(submitButton);
         form.appendChild(submitCloseButton);
         bedsDiv.appendChild(form);
@@ -574,9 +575,10 @@ document.getElementById('backForm').addEventListener('submit', function(event) {
     const year = now.getFullYear();
 
     const formattedDateTime = `${day}/${month}/${year}`;
-    localStorage.setItem(formattedDateTime+"-registro5N",JSON.stringify(Registros5N));
-    localStorage.setItem(formattedDateTime+"-registro7N",JSON.stringify(Registros7N));
-    localStorage.setItem(formattedDateTime+"-registro6S",JSON.stringify(Registros6S));
+    const formattedDateHour=`${now.getHours()}:${now.getMinutes()}`;
+    localStorage.setItem(formattedDateTime+"-"+formattedDateHour+"-registro5N",JSON.stringify(Registros5N));
+    localStorage.setItem(formattedDateTime+"-"+formattedDateHour+"-registro7N",JSON.stringify(Registros7N));
+    localStorage.setItem(formattedDateTime+"-"+formattedDateHour+"-registro6S",JSON.stringify(Registros6S));
     Registros7N.forEach((registro) => {
         registro.cantidad = 0;
     });
